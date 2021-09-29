@@ -1,0 +1,22 @@
+<div class="card border-success mb-3" style="max-width: 18rem;">
+  <div class="card-header bg-transparent border-success">
+    <div class="d-flex justify-content-between">
+      <label class="font-weight-bold">
+        <a href='/pokemon/show/one/{{ _id }}'>
+            {{ name }} 
+        </a>
+      </label>
+      <label class="text-muted">{{ type }}</label>
+    </div>
+  <style>
+    .fit-image{
+      width: 100%;
+      height: 200px;
+    }
+  </style>
+  </div>
+  <div class="card-body text-success">
+    <img src="{{ image }} " class="fit-image"></img>
+  </div>
+  <div class="card-footer bg-transparent border-success"> {{ description }} </div>
+</div>

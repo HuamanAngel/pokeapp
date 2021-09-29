@@ -1,0 +1,33 @@
+<h1>Crear nuevo pokemon</h1>
+<div class="row col-md-6">
+    <form action="/pokemon/create/process" method="post">
+        <div class="form-control p-2">
+            <label class="" for="">Nombre</label> 
+            <input class="form-control" type="text" placeholder="Inserte nombre del pokemon" name="pokemon_name" required>
+        </div>
+
+        <div class="form-control p-2">
+            <label  for="">Tipo</label> 
+            <select class="form-control" name="pokemon_type" id="" required>
+                <option value="Electrico" selected>Electrico</option>
+                <option value="Fuego">Fuego</option>
+                <option value="Planta">Planta</option>
+            </select>
+        </div>
+
+        <div class="form-control p-2">
+            <label for="">Descripcion</label> 
+            <input class="form-control" type="text" placeholder="Descripcion . . . " name="pokemon_description" required>
+        </div>
+        <div class="form-control p-2">
+            <label for="">Imagen</label> 
+            <input class="form-control" type="url" placeholder="Inserte URL de imagen" name="pokemon_image" required>            
+        </div>
+        <div class="mt-4 d-flex justify-content-center">
+            <button class="btn btn-success">
+                Crear mi pokemon
+            </button>
+        </div>
+
+    </form>
+</div>
